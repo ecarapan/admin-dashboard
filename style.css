@@ -26,10 +26,11 @@ ul {
 }
 
 .side-bar {
-  background-color: lightblue;
+  background-color: #6969f7;
   padding: 20px;
   grid-area: sidebar;
   display: grid;
+
 }
 
 .nav-bar {
@@ -66,9 +67,17 @@ ul {
 
 .project-list > div {
   background-color: white;
-  border-radius: 0.5rem;
-  padding-top: 25px;
-  padding-left: 15px;
+  border-left: 10px solid orange;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.project-list > div > .icon {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
 .announcements {
@@ -79,4 +88,13 @@ ul {
 .trending {
   grid-area: trending;
   padding: 20px;
+  
 }
+
+.trending-list {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
