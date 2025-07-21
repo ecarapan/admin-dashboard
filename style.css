@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 2px solid red; */
 }
 
 body {
@@ -30,11 +31,38 @@ ul {
 }
 
 .side-bar {
-  background-color: #6969f7;
+  background-color: #0288D1;
   padding: 20px;
+  color: white;
+  font-weight: bold;
   grid-area: sidebar;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40vh;
+}
 
+.side-bar > .top-group ul,
+.side-bar > .bottom-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.2rem;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.side-bar > .top-group ul li,
+.side-bar > .bottom-group ul li {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .nav-bar {
@@ -75,7 +103,7 @@ ul {
   padding: 15px;
   display: grid;
   grid-template-rows: 1fr auto;
-  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .project-list > div > .icon {
@@ -97,11 +125,16 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .announcements-list > div {
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
+}
+
+.announcements-list > div > p {
+  font-size: 0.9rem;
 }
 
 .announcements-list > div:last-child {
@@ -122,6 +155,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .trending-list > div {
@@ -129,4 +163,7 @@ ul {
   gap: 15px;
 }
 
+.trending-list p {
+  font-size: 0.9rem;
+}
 
